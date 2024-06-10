@@ -1,0 +1,12 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.btn {
+    float: right;
+}
+
+.heading {
+    text-align: center;
+}
