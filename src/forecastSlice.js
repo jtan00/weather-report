@@ -28,9 +28,9 @@ export const forecastSlice = createSlice({
       state.loading = false;
       console.log(action.payload);
       state.cityName = action.payload.location.name;
-      state.temperature1 = action.payload.forecast.forecastday[0].day.avgtemp_f;
-      state.temperature2 = action.payload.forecast.forecastday[1].day.avgtemp_f;
-      state.temperature3 = action.payload.forecast.forecastday[2].day.avgtemp_f;
+      state.temperature1 = action.payload.forecast.forecastday[0].day.avgtemp_f + "°F";
+      state.temperature2 = action.payload.forecast.forecastday[1].day.avgtemp_f + "°F";
+      state.temperature3 = action.payload.forecast.forecastday[2].day.avgtemp_f + "°F";
       state.date1 = action.payload.forecast.forecastday[0].date;
       state.date2 = action.payload.forecast.forecastday[1].date;
       state.date3 = action.payload.forecast.forecastday[2].date;
